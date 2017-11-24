@@ -5,11 +5,42 @@
 	
 		<title> Login page </title>
 	
+		<style>
+		
+		.login{
+			
+			clear: both;
+			width: 300px;
+			text-align: center;
+			
+		}
+		
+		.login input{
+			
+			clear: both;
+			width: 100%;
+			
+		}
+		 
+		</style>
+	
 	</head>
 	
 	<body>
 	
-
+		<div class="login">
+		
+			<form action="">
+		
+				Username: <input type="text" name="usrnm">
+				<br>
+				Password: <input type="password" name="pwd">
+				<br>
+				<input type="submit">
+				
+			</form>
+			
+		</div>	
 		
 	</body>
 	

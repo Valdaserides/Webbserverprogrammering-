@@ -10,4 +10,6 @@
 	$username = $_POST['usernm'];
 	$password = $_POST['pwd'];
 	
+	$insert = "INSERT INTO users (Username, Password) VALUES ('$username', '$password');";
+	
 ?>

@@ -7,7 +7,7 @@
 	
 	$dbc = mysqli_connect($adress,$user,$password,$database);
 
-	$username = $_POST['usernm'];
+	$username = $_POST['usrnm'];
 	$password = $_POST['pwd'];
 	
 	$insert = "INSERT INTO users (Username, Password) VALUES ('$username', '$password');";

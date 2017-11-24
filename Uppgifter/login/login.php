@@ -30,7 +30,7 @@
 	
 		<div class="login">
 		
-			<form action="">
+			<form action="submit.php" method="POST">
 		
 				Username: <input type="text" name="usrnm">
 				<br>

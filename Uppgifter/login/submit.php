@@ -12,4 +12,17 @@
 	
 	$insert = "INSERT INTO users (Username, Password) VALUES ('$username', '$password');";
 	
+	if(mysqli_query($dbc, $insert)){
+		
+		echo "You have successfully logged in.";
+		
+	}
+	else{
+		
+		echo "Somethin went wrong. SQL error code:";
+		echo '<br>';
+		echo mysqli_error($dbc);
+		
+	}
+	
 ?>

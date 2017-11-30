@@ -5,7 +5,7 @@
 	
 	<meta charset="utf-8">
 	
-	<title>  </title>
+	<title> Login </title>
 	
 	<style>
 
@@ -15,8 +15,15 @@
 
 <body>
 
-
-
+	<form>
+	
+		Username: <input type="text" name="username">
+		
+		Password: <input type="password" name="pwd">
+		
+		<input type="submit">
+		
+	</form>	
 
 </body>
 </html>

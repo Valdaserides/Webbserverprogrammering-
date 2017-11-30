@@ -8,7 +8,7 @@
 	$dbc = mysqli_connect($adress,$user,$password,$database);
 
 	$username = $_POST['username'];
-	$fullName = $_POST['name'];
+	$password = $_POST['pwd'];
 	
 	$insert = "INSERT INTO data (användarnamn, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
 	

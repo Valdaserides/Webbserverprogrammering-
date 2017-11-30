@@ -4,25 +4,26 @@
 	$user = "root";
 	$password = "";
 	$database = "register";
-	
+
 	$dbc = mysqli_connect($adress,$user,$password,$database);
 
-	$username = $_POST['usrnm'];
+	$username = $_POST['username'];
+	$fullName = $_POST['name'];
+	$email = $_POST['email'];
+	$date = $_POST['date'];
 	$password = $_POST['pwd'];
 	
-	$insert = "INSERT INTO users (Username, Password) VALUES ('$username', '$password');";
+	$insert = "INSERT INTO data (användarnamn, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
 	
 	if(mysqli_query($dbc, $insert)){
-		
-		echo "You have successfully logged in.";
-		
+		echo "Success!";
 	}
 	else{
-		
-		echo "Somethin went wrong. SQL error code:";
-		echo '<br>';
 		echo mysqli_error($dbc);
-		
+		echo '<br>';
+		echo "Error!";
 	}
 	
+	
+
 ?>

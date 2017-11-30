@@ -13,7 +13,7 @@
 	$date = $_POST['date'];
 	$password = $_POST['pwd'];
 	
-	$insert = "INSERT INTO data (användarnamn, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
+	$insert = "INSERT INTO data (username, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
 	
 	if(mysqli_query($dbc, $insert)){
 		echo "Success!";

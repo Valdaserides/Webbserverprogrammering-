@@ -15,7 +15,7 @@
 
 <body>
 
-	<form>
+	<form action="submit.php" method="POST">
 	
 		Username: <input type="text" name="username">
 		

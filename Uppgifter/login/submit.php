@@ -9,9 +9,6 @@
 
 	$username = $_POST['username'];
 	$fullName = $_POST['name'];
-	$email = $_POST['email'];
-	$date = $_POST['date'];
-	$password = $_POST['pwd'];
 	
 	$insert = "INSERT INTO data (användarnamn, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
 	

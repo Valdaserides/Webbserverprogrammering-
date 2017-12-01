@@ -9,21 +9,44 @@
 	
 	<style>
 
+	.formulär{
+		
+		clear: both;
+		width: 300px;
+		text-align: center;
+		margin: auto;
+		
+	}
+	.formulär input{
+		
+		clear: both;
+		width: 100%;
+		
+	}
+	
 	</style>
 
 </head>
 
 <body>
 
-	<form action="submit.php" method="POST">
+	<div class="formulär">
+
+		<h1> Login page </h1>
 	
-		Username: <input type="text" name="username">
+		<form action="submit.php" method="POST">
+			
+			Username: <input type="text" name="username">
+				
+			Password: <input type="password" name="pwd">
+				
+			<input type="submit">
+				
+		</form>	
 		
-		Password: <input type="password" name="pwd">
-		
-		<input type="submit">
-		
-	</form>	
+		<h3> Register <a href="../register/register.php"> here. </a> </h3>
+			
+	</div>
 
 </body>
 </html>

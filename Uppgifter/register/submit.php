@@ -17,6 +17,8 @@
 	
 	if(mysqli_query($dbc, $insert)){
 		echo "Success!";
+		echo "<br>";
+		echo "Please go the <a href='../login/login.php'> login </a> page.";
 	}
 	else{
 		echo mysqli_error($dbc);

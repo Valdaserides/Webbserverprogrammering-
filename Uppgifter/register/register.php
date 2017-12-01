@@ -4,6 +4,7 @@
 	clear: both;
 	width: 300px;
 	text-align: center;
+	margin:auto;
 	
 }
 .formulär input{
@@ -15,6 +16,8 @@
 
 </style>
 <div class="formulär">
+
+	<h1> Register page </h1>
 
 	<form method="POST" action="submit.php">
 
@@ -31,6 +34,8 @@
 		<input type="submit" name="submit">
 
 	</form>
+	
+	<h3> Login <a href="../login/login.php"> here. </a> </h3>
 	
 </div>
 	

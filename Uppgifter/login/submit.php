@@ -18,7 +18,7 @@
 		if(mysqli_fetch_array($result)){
 			
 			echo "You have successfully logged in as: $username";
-			
+	
 		}
 		else{
 			

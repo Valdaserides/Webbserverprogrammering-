@@ -9,11 +9,11 @@
 
 	if($_POST['username'] != NULL && $_POST['name'] != NULL && $_POST['email'] != NULL && $_POST['date'] != NULL && $_POST['pwd'] != NULL){
 		
-		$username = $_POST['username'];
-		$fullName = $_POST['name'];
-		$email = $_POST['email'];
-		$date = $_POST['date'];
-		$password = $_POST['pwd'];
+		$username = htmlspecialchars($_POST['username']);
+		$fullName = htmlspecialchars($_POST['name']);
+		$email = htmlspecialchars($_POST['email']);
+		$date = htmlspecialchars($_POST['date']);
+		$password = htmlspecialchars($_POST['pwd']);
 		
 		$insert = "INSERT INTO data (username, namn, email, date, password) VALUES ('$username', '$fullName', '$email', '$date', '$password');";
 		

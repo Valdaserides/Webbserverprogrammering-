@@ -9,8 +9,8 @@
 	
 	if(isset($_POST['username']) && isset($_POST['pwd'])){
 	
-		$username = $_POST['username'];
-		$password = $_POST['pwd'];
+		$username = htmlspecialchars($_POST['username']);
+		$password = htmlspecialchars($_POST['pwd']);
 		
 		$select = "SELECT username,password FROM data WHERE username='$username' AND password='$password';";
 		$result = mysqli_query($dbc,$select);

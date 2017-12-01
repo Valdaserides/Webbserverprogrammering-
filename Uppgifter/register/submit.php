@@ -7,7 +7,7 @@
 
 	$dbc = mysqli_connect($adress,$user,$password,$database);
 
-	if($_POST['username'] != NULL && $_POST['name'] != NULL && $_POST['email'] != NULL && $_POST['date'] != NULL && $_POST['password'] != NULL){
+	if($_POST['username'] != NULL && $_POST['name'] != NULL && $_POST['email'] != NULL && $_POST['date'] != NULL && $_POST['pwd'] != NULL){
 		
 		$username = $_POST['username'];
 		$fullName = $_POST['name'];

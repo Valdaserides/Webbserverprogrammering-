@@ -15,6 +15,7 @@ if(!$_SESSION['loggedIn']){
 else{
 	echo "Välkommen till sidan." . $_SESSION['username'] . "!";
 
+}
 ?>
 <br>
 <a href="sida1.php"> sida 1 </a>
@@ -27,6 +28,3 @@ else{
 		<input type="submit" name="logout" value="logga ut">
 
 </form>
-<?php
-}
-?>

@@ -9,14 +9,23 @@
 	
 	<style>
 
-	
+	#bild{
+		width: 100px;
+		height: 100px;
+	}
 	
 	</style>
 	
 	<script>
 	
-	function myFunction(){
-		alert("Hello, World!");
+	function big(bild){
+		bild.style.width = "200px";
+		bild.style.height = "200px";
+	}
+	
+	function small(bild){
+		bild.style.width = "";
+		bild.style.height = "";
 	}
 	
 	</script>
@@ -25,7 +34,7 @@
 
 <body>
 
-	<button onClick="myFunction()"> Button </button>
+	<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">
 
 
 </body>

@@ -12,10 +12,8 @@ if(!$_SESSION['loggedIn']){
 	header("Location:index.php");
 }
 
-else{
-	echo "Välkommen till sidan." . $_SESSION['username'] . "!";
+echo "Välkommen till sida 1" . $_SESSION['username'];
 
-}
 ?>
 <br>
 <a href="sida1.php"> sida 1 </a>

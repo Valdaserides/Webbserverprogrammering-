@@ -9,9 +9,15 @@
 	
 	<style>
 
+	
+	
 	</style>
 	
 	<script>
+	
+	function myFunction(){
+		alert("Hello, World!");
+	}
 	
 	</script>
 
@@ -19,7 +25,7 @@
 
 <body>
 
-
+	<button onClick="myFunction()"> Button </button>
 
 
 </body>

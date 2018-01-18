@@ -51,20 +51,41 @@
 		document.body.style.backgroundColor = "cyan";
 	}
 	
+	function reset(){
+		document.getElementById("main").innerHTML = "Hello, World!";
+	}
+	
 	</script>
 
 </head>
 
 <body>
 
-	<button onClick="myFunction()"> Alert </button>
+	<div id="main">
 
-	<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">
-	
-	<button onClick="viewHide()"> Dölj/Visa </button>
-	
-	<button onClick="changeColor()"> Byt Färg </button>
+		<button onClick="myFunction()"> Alert </button>
 
+		<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">
+		
+		<button onClick="viewHide()"> Dölj/Visa </button>
+		
+		<button onClick="changeColor()"> Byt Färg </button>
+		
+		<button onClick="reset()"> Ta bort allt </button>
 
+	</div>
+		
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

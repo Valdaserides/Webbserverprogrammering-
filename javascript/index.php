@@ -9,6 +9,10 @@
 	
 	<style>
 
+	body{
+		background-color: white;
+	}
+	
 	#bild{
 		width: 100px;
 		height: 100px;
@@ -43,6 +47,10 @@
 		}
 	}
 	
+	function changeColor(){
+		document.body.style.backgroundColor = "cyan";
+	}
+	
 	</script>
 
 </head>
@@ -54,6 +62,8 @@
 	<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">
 	
 	<button onClick="viewHide()"> Dölj/Visa </button>
+	
+	<button onClick="changeColor()"> Byt Färg </button>
 
 
 </body>

@@ -19,6 +19,12 @@
 		display: block;
 	}
 	
+	#5050{
+		background-color: red;
+		width: 50px;
+		height: 50px;
+	}
+	
 	</style>
 	
 	<script>
@@ -55,6 +61,18 @@
 		document.getElementById("main").innerHTML = "Hello, World!";
 	}
 	
+	function changeColorDiv(div){
+		if(div.style.backgroundColor === "red"){
+			div.style.backgroundColor = "green";
+		}
+		else if(div.style.backgroundColor === "green"){
+			div.style.backgroundColor = "blue";
+		}
+		else if(div.style.backgroundColor === "blue"){
+			div.style.backgroundColor = "red";
+		}
+	}
+	
 	</script>
 
 </head>
@@ -63,6 +81,8 @@
 
 	<div id="main">
 
+		<div id="5050" style="height:50px;width:50px;background-color:red;border:solid;" onmousedown="changeColorDiv(this)"></div> <!--CSS fungerade inte så skrev det direkt i elementet ist.-->
+	
 		<button onClick="myFunction()"> Alert </button>
 
 		<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">

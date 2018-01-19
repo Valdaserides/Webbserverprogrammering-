@@ -73,6 +73,37 @@
 		}
 	}
 	
+	var numberr = 0;
+	
+	
+	function upBy1(){
+		
+		numberr = numberr + 1;
+		document.getElementById("numberDisplay").innerHTML = numberr;
+		
+	}
+	
+	function upBy10(){
+		
+		numberr = numberr + 10;
+		document.getElementById("numberDisplay").innerHTML = numberr;
+		
+	}
+	
+	function upBy100(){
+		
+		numberr = numberr + 100;
+		document.getElementById("numberDisplay").innerHTML = numberr;
+		
+	}
+	
+	function numberReset(){
+		
+		numberr = 0;
+		document.getElementById("numberDisplay").innerHTML = numberr;
+		
+	}
+	
 	</script>
 
 </head>
@@ -83,15 +114,21 @@
 
 		<div id="5050" style="height:50px;width:50px;background-color:red;border:solid;" onmousedown="changeColorDiv(this)"></div> <!--CSS fungerade inte så skrev det direkt i elementet ist.-->
 	
-		<button onClick="myFunction()"> Alert </button>
+		<button onClick="myFunction()"> Alert </button><br>
 
 		<img src="bild.jpg" id="bild" onmouseenter="big(this)" onmouseleave="small(this)">
 		
-		<button onClick="viewHide()"> Dölj/Visa </button>
+		<button onClick="viewHide()"> Dölj/Visa </button><br>
 		
-		<button onClick="changeColor()"> Byt Färg </button>
+		<button onClick="changeColor()"> Byt Färg </button><br>
 		
-		<button onClick="reset()"> Ta bort allt </button>
+		<button onClick="reset()"> Ta bort allt </button><br>
+		
+		<div id="number"> <p id="numberDisplay"> 0 </p> </div>
+		<button onClick="upBy1()"> Öka med 1 </button>
+		<button onClick="upBy10()"> Öka med 10 </button>
+		<button onClick="upBy100()"> Öka med 100 </button>
+		<button onClick="numberReset()"> Reset </button>
 
 	</div>
 		

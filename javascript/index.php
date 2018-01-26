@@ -32,12 +32,20 @@
 	}
 	
 	#movingDiv{
-		float: left;
+		position: absolute;
 		background-color: red;
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
 		border: solid;
-		margin-top: 30px;
+	}
+	
+	#divMovingDiv{
+		
+		position: absolute;
+		height: 400px;
+		width: 400px;
+		border: solid;
+		
 	}
 	
 	#movingdivBtn{
@@ -83,13 +91,13 @@
 	}
 	
 	function changeColorDiv(div){
-		if(div.style.backgroundColor === "red"){
+		if(div.style.backgroundColor == "red"){
 			div.style.backgroundColor = "green";
 		}
-		else if(div.style.backgroundColor === "green"){
+		else if(div.style.backgroundColor == "green"){
 			div.style.backgroundColor = "blue";
 		}
-		else if(div.style.backgroundColor === "blue"){
+		else if(div.style.backgroundColor == "blue"){
 			div.style.backgroundColor = "red";
 		}
 	}
@@ -127,60 +135,38 @@
 	
 	function leftUp(){
 		
-		document.getElementById("movingDiv").style.marginLeft = "";
-		document.getElementById("movingDiv").style.marginBottom = "";
-		document.getElementById("movingDiv").style.marginRight = "";
-		document.getElementById("movingDiv").style.marginTop = "";		
+		document.getElementById("movingDiv").style.left = "0px";
+		document.getElementById("movingDiv").style.top = "0px";
+		document.getElementById("movingDiv").style.right = "";
+		document.getElementById("movingDiv").style.bottom = "";
 		
-		document.getElementById("movingDiv").style.marginLeft = "-67%";
-		document.getElementById("movingDiv").style.marginTop = "-37%";
 		
 	}
 	
 	function leftDown(){
 		
-		document.getElementById("movingDiv").style.marginLeft = "";
-		document.getElementById("movingDiv").style.marginBottom = "";
-		document.getElementById("movingDiv").style.marginRight = "";
-		document.getElementById("movingDiv").style.marginTop = "";
-		
-		document.getElementById("movingDiv").style.marginLeft = "-67%";
-		document.getElementById("movingDiv").style.marginTop = "25%";
-			
+		document.getElementById("movingDiv").style.left = "0px";
+		document.getElementById("movingDiv").style.top = "";
+		document.getElementById("movingDiv").style.right = "";
+		document.getElementById("movingDiv").style.bottom = "0px";
 		
 	}
 	
 	function rightDown(){
 		
-		document.getElementById("movingDiv").style.marginLeft = "";
-		document.getElementById("movingDiv").style.marginBottom = "";
-		document.getElementById("movingDiv").style.marginRight = "";
-		document.getElementById("movingDiv").style.marginTop = "";
-		
-		document.getElementById("movingDiv").style.marginTop = "25%";
-		document.getElementById("movingDiv").style.marginLeft = "83%";
+		document.getElementById("movingDiv").style.left = "";
+		document.getElementById("movingDiv").style.top = "";
+		document.getElementById("movingDiv").style.right = "0px";
+		document.getElementById("movingDiv").style.bottom = "0px";
 		
 	}
 	
 	function rightUp(){
 		
-		document.getElementById("movingDiv").style.marginLeft = "";
-		document.getElementById("movingDiv").style.marginBottom = "";
-		document.getElementById("movingDiv").style.marginRight = "";
-		document.getElementById("movingDiv").style.marginTop = "";
-		
-		document.getElementById("movingDiv").style.marginLeft = "83%";
-		document.getElementById("movingDiv").style.marginTop = "-37%";
-			
-		
-	}
-	
-	function movingdivReset(){
-		
-		document.getElementById("movingDiv").style.marginLeft = "";
-		document.getElementById("movingDiv").style.marginBottom = "";
-		document.getElementById("movingDiv").style.marginRight = "";
-		document.getElementById("movingDiv").style.marginTop = "";
+		document.getElementById("movingDiv").style.left = "";
+		document.getElementById("movingDiv").style.top = "0px";
+		document.getElementById("movingDiv").style.right = "0px";
+		document.getElementById("movingDiv").style.bottom = "";
 		
 	}
 	
@@ -209,8 +195,6 @@
 		<button onClick="upBy10()"> Öka med 10 </button>
 		<button onClick="upBy100()"> Öka med 100 </button>
 		<button onClick="numberReset()"> Reset </button><br><br>
-		
-		<div id="movingDiv"> <b> Moving Div <b> </div>
 
 		<div id="movingdivBtn">
 		
@@ -218,11 +202,12 @@
 			<button onClick="leftDown()"> Vänster Nedre Hörn </button>
 			<button onClick="rightDown()"> Höger Nedre Hörn </button>
 			<button onClick="rightUp()"> Höger Uppe Hörn </button>
-			<button onClick="movingdivReset()"> Reset Moving Div </button>
 			
 		</div>
 
 	</div>
+	
+	<div id="divMovingDiv"> <div id="movingDiv"> <b> Moving Div <b> </div> </div>
 		
 </body>
 </html>

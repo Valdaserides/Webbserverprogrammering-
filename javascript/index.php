@@ -79,7 +79,7 @@
 	}
 	
 	function reset(){
-		document.getElementById("main").innerHTML = "Hello, World!";
+		document.body.innerHTML = "Hello, World!";
 	}
 	
 	function changeColorDiv(div){
